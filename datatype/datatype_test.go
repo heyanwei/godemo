@@ -15,4 +15,9 @@ func TestPointer(t *testing.T) {
 	log.Println(*a)
 	//打印a的地址
 	log.Println(a)
+
+	//创建指针
+	str := new(string)
+	*str = "hello"
+	log.Println(*str)
 }
